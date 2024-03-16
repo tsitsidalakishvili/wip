@@ -1,44 +1,21 @@
 import streamlit as st
 import os
-from PIL import Image, ImageDraw, ImageEnhance, ImageOps, ImageFont
-import requests
-from io import BytesIO
-import tempfile
-from rapidocr_onnxruntime import RapidOCR
-import pandas as pd
-import cv2
-import torch
-from torchvision import transforms
-from torchvision.ops import nms
-import re  # Import the regular expression library
-import numpy as np
-import altair
-#from ironpdf import PdfDocument
-import fitz
-import io
-from streamlit_elements import mui
-import requests
-from PIL import ImageFont
-from pdf2image import convert_from_bytes
-import io
-from io import BytesIO
-import tempfile
-from rapidocr_onnxruntime import RapidOCR
-import pandas as pd
-import cv2
-import torch
-from PIL import Image
-from torchvision import transforms
-from torchvision.ops import nms
-import os
-import re  # Import the regular expression library
-import tempfile
-import numpy as np
 from PIL import Image, ImageDraw, ImageEnhance, ImageOps
+import requests
+from io import BytesIO
+import tempfile
 from rapidocr_onnxruntime import RapidOCR
-from torchvision import transforms
 import pandas as pd
-import streamlit as st
+import cv2
+import torch
+from torchvision import transforms
+from torchvision.ops import nms
+import re
+import numpy as np
+import fitz  # This is PyMuPDF
+from pdf2image import convert_from_bytes
+
+
 Image.MAX_IMAGE_PIXELS = None  # Removes the limit entirely
 
 st.set_page_config(layout="wide")
